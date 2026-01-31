@@ -21,3 +21,4 @@
 include:
    - board: nice_nano
      shield: scottopad
+     snippet: studio-rpc-usb-uart
