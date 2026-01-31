@@ -44,7 +44,7 @@
             >;
         };
 
-            function_layer {
+            numbers_layer {
             display-name = "Numbers";
 
             bindings =<
