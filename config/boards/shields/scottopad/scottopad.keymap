@@ -8,7 +8,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <135>;
-            bindings = <&kp Z>, <&tog 1>;
+            bindings = <&kp LSHIFT>, <&tog 1>;
         };
     };
 
@@ -19,9 +19,9 @@
             display-name = "Default";
 
             bindings = <
-                &kp Q &kp W &kp E &kp R &kp T &kp Y
-                &kp A &kp S &kp D &kp F &kp G &kp H
-                &td0  &kp X &kp C &kp V &kp B &kp N
+                &kp TAB   &kp Q &kp W &kp E     &kp R &kp ESC
+                &kp LCTRL &kp A &kp S &kp D     &kp F &kp ENTER
+                &td0      &kp Z &kp X &kp SPACE &kp B &kp N
             >;
         };
 
