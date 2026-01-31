@@ -19,7 +19,7 @@
             display-name = "Default";
 
             bindings = <
-                &kp TAB   &kp Q &kp W &kp E     &kp R &to2
+                &kp TAB   &kp Q &kp W &kp E     &kp R &lt 2 ESC
                 &kp LCTRL &kp A &kp S &kp D     &kp F &kp ENTER
                 &td0      &kp Z &kp X &kp SPACE &kp B &kp N
             >;
