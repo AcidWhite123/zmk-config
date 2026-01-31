@@ -10,6 +10,14 @@
             tapping-term-ms = <135>;
             bindings = <&kp LSHIFT>, <&tog 1>;
         };
+       lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo 2>, <&kp ESC>;
+            display-name = "Layer-Tap";
+        };
     };
 
     keymap {
@@ -19,7 +27,7 @@
             display-name = "Default";
 
             bindings = <
-                &kp TAB   &kp Q &kp W &kp E     &kp R &kp ESC
+                &kp TAB   &kp Q &kp W &kp E     &kp R &to2
                 &kp LCTRL &kp A &kp S &kp D     &kp F &kp ENTER
                 &td0      &kp Z &kp X &kp SPACE &kp B &kp N
             >;
@@ -27,6 +35,16 @@
 
         function_layer {
             display-name = "Function";
+
+            bindings =<
+                &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
+                &bootloader  &studio_unlock &none        &none        &none        &none
+                &tog 1       &none          &none        &none        &none        &none
+            >;
+        };
+
+function_layer {
+            display-name = "Numbers";
 
             bindings =<
                 &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
