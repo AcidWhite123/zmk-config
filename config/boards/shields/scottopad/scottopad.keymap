@@ -10,7 +10,16 @@
             tapping-term-ms = <135>;
             bindings = <&kp LSHIFT>, <&tog 1>;
         };
-    };
+         lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
+        };
+     };
+  };
 
     keymap {
         compatible = "zmk,keymap";
