@@ -38,7 +38,7 @@
             RC(3, 0) RC(3, 1)          RC(3, 3)          RC(3, 5) RC(3, 6)
         >;
     };
-{
+
     layout: layout {
         compatible = "zmk,physical-layout";
         display-name = "Ortho 4x5";
