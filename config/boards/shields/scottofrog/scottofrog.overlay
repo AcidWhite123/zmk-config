@@ -1,15 +1,13 @@
-#include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
-        zmk,kscan = &kscan;
-        zmk,matrix_transform = &transform;
-    };
+        zmk,physical-layout = &layout;
+};
 
     kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "col2row";
 
         row-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
