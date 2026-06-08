@@ -11,14 +11,14 @@
 #define COMBO_TIMEOUT 50
 
 / {
-    combos {
+   combos {
         compatible = "zmk,combos";
 
         // Meta combos
         meta_settings_combo {
             timeout-ms = <50>;
             key-positions = <16 17 18>;
-            bindings = <&mo SETTINGS>;
+            bindings = <&tog SETTINGS>; // Změněno z &mo na &tog
         };
 
         meta_lock_combo {
@@ -38,7 +38,7 @@
         letters_single_quote_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <19 3>;
-            bindings = <&kp SINGLE_QUOTE>;
+            bindings = <&kp SQT>; // Opraveno ze SINGLE_QUOTE
             layers = <DEFAULT>;
         };
 
@@ -219,28 +219,28 @@
         symbol_greater_than_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <19 13>;
-            bindings = <&kp GREATER_THAN>;
+            bindings = <&kp GT>; // Opraveno ze GREATER_THAN
             layers = <SYMBOL>;
         };
 
         symbol_right_parenthesis_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <19 12>;
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp RPAR>; // Opraveno z RIGHT_PARENTHESIS
             layers = <SYMBOL>;
         };
 
         symbol_right_bracket_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <19 11>;
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp RBKT>; // Opraveno z RIGHT_BRACKET
             layers = <SYMBOL>;
         };
 
         symbol_right_brace_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <19 10>;
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp RBRC>; // Opraveno z RIGHT_BRACE
             layers = <SYMBOL>;
         }; 
 
@@ -396,7 +396,7 @@
         orange_up_arrow_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 8>;
-            bindings = <&kp UP_ARROW>;
+            bindings = <&kp UP>; // Opraveno z UP_ARROW
             layers = <DEFAULT>;
         };
 
@@ -424,21 +424,21 @@
         orange_left_arrow_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 12>;
-            bindings = <&kp LEFT_ARROW>;
+            bindings = <&kp LEFT>; // Opraveno z LEFT_ARROW
             layers = <DEFAULT>;
         };
 
         orange_down_arrow_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 13>;
-            bindings = <&kp DOWN_ARROW>;
+            bindings = <&kp DOWN>; // Opraveno z DOWN_ARROW
             layers = <DEFAULT>;
         };
 
         orange_right_arrow_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 14>;
-            bindings = <&kp RIGHT_ARROW>;
+            bindings = <&kp RIGHT>; // Opraveno z RIGHT_ARROW
             layers = <DEFAULT>;
         };
 
@@ -474,7 +474,7 @@
         special_left_arrow_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 5>;
-            bindings = <&kp LEFT_ARROW>;
+            bindings = <&kp LEFT>; // Opraveno z LEFT_ARROW
             layers = <SYMBOL>;
         }; 
 
@@ -495,7 +495,7 @@
         special_right_arrow_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 9>;
-            bindings = <&kp RIGHT_ARROW>;
+            bindings = <&kp RIGHT>; // Opraveno z RIGHT_ARROW
             layers = <SYMBOL>;
         };  
 
@@ -520,7 +520,7 @@
             layers = <DEFAULT>;
         };          
     };
- 
+
     keymap {
         compatible = "zmk,keymap";
 
